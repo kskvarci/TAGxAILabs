@@ -4,7 +4,7 @@
   "parameters": {
     "customData": {
       "type": "string",
-      "defaultValue": "#!/bin/sh\nsed 's/# c.JupyterHub.port = 8000/c.JupyterHub.port = 443/' /etc/jupyterhub/jupyterhub_config.py -i\ncd /home/azadmin/notebooks\ngit clone https://github.com/pablomarin/Meetups-Data-AI-DFW.git",
+      "defaultValue": "#!/bin/sh\nsed 's/# c.JupyterHub.port = 8000/c.JupyterHub.port = 443/' /etc/jupyterhub/jupyterhub_config.py -i\ncd /home/azadmin/notebooks\ngit clone https://github.com/kskvarci/TAGxAILabs.git",
       "metadata": {
         "description": "String passed down to the Virtual Machine."
       }
