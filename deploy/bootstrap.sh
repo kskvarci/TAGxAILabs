@@ -1,3 +1,6 @@
+#!/bin/bash
+set -x #echo on
+
 # create a new conda environment with Python 3.6, numpy and cython
 conda create -n azml Python=3.6 cython numpy
 
