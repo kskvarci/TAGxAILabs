@@ -4,7 +4,7 @@
   "parameters": {
     "customData": {
       "type": "string",
-      "defaultValue": "#!/bin/sh\nsed 's/# c.JupyterHub.port = 8000/c.JupyterHub.port = 443/' /etc/jupyterhub/jupyterhub_config.py -i\ncd /home/azadmin/notebooks\ngit clone https://github.com/kskvarci/TAGxAILabs.git\nchmod u+x /home/azadmin/notebooks/TAGxAILabs/deploy/bootstrap.sh\n/home/azadmin/notebooks/TAGxAILabs/deploy/bootstrap.sh",
+      "defaultValue": "#!/bin/sh\nsed 's/# c.JupyterHub.port = 8000/c.JupyterHub.port = 443/' /etc/jupyterhub/jupyterhub_config.py -i\ncd /home/azadmin/notebooks\ngit clone https://github.com/kskvarci/TAGxAILabs.git\nchmod u+x /home/azadmin/notebooks/TAGxAILabs/deploy/bootstrap.sh\nsudo chown -R azadmin:azadmin /home/azadmin/notebooks/TAGxAILabs\n./home/azadmin/notebooks/TAGxAILabs/deploy/bootstrap.sh",
       "metadata": {
         "description": "String passed down to the Virtual Machine."
       }
