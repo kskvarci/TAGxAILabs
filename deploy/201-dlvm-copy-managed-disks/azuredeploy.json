@@ -32,7 +32,7 @@
     },
     "virtualMachineCount": {
       "type": "int",
-      "defaultValue": 2,
+      "defaultValue": 1,
       "metadata": {
         "description": "Number of  virtual machines to be created"
       }
@@ -41,7 +41,8 @@
       "type": "string",
       "defaultValue": "Standard_NC6",
       "allowedValues": [
-        "Standard_NC6"
+        "Standard_NC6",
+        "Standard_NC6s_v3"
       ],
       "metadata": {
         "description": "Virtual Machine Size"
