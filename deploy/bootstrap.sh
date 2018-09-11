@@ -6,12 +6,15 @@ PATH=/anaconda/envs/py35/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
 wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
 tar -xzf ta-lib-0.4.0-src.tar.gz
 cd ta-lib/
-sudo ./configure
-sudo make
-sudo make install
+./configure --prefix=/usr
+make
+make install
 
 # Install the custom vision module for labs 1 and 2
 pip install azure-cognitiveservices-vision-customvision azure-cli sklearn matplotlib pandas seaborn livelossplot ta-lib
+
+# Install the AzureML meta-package
+pip install --upgrade --extra-index-url https://azuremlsdktestpypi.azureedge.net/sdk-release/Preview/E7501C02541B433786111FE8E140CAA1 azureml-sdk
 
 # Create a new kernel for lab 3
 #env
