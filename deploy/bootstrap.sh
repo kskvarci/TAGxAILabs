@@ -12,6 +12,7 @@ sudo make
 sudo make install
 
 # Create a new kernel for lab 3
+env
 conda create -n azml Python=3.6 cython numpy -y
 source activate azml
 pip install azure-cli sklearn tensorflow-gpu cntk-gpu keras matplotlib pandas seaborn livelossplot ta-lib
