@@ -1,7 +1,7 @@
 PATH=/anaconda/envs/py35/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/opt/caffe/build/install/bin/:/usr/local/cuda/bin:/dsvm/tools/cntk/cntk/bin:/dsvm/tools/spark/current/bin:/opt/mssql-tools/bin:/dsvm/tools/torch/bin
 
 # Upgrade PIP
-pip install pip=8.1.1
+pip install --upgrade pip
 
 # Install TA-Lib and talib
 wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
