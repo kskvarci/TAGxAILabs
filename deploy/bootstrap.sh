@@ -11,8 +11,14 @@ cd ta-lib/
 make
 make install
 
-# Install the custom vision module for labs 1 and 2
-pip install azure-cognitiveservices-vision-customvision azure-cli sklearn matplotlib pandas seaborn livelossplot
+# Install python modules
+pip install azure-cognitiveservices-vision-customvision
+pip install azure-cli 
+pip install sklearn 
+pip install matplotlib 
+pip install pandas 
+pip install seaborn 
+pip install livelossplot
 pip install ta-lib
 
 # Install the AzureML meta-package
