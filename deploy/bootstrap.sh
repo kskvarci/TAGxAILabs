@@ -1,3 +1,5 @@
+PATH=/anaconda/envs/py35/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/opt/caffe/build/install/bin/:/usr/local/cuda/bin:/dsvm/tools/cntk/cntk/bin:/dsvm/tools/spark/current/bin:/opt/mssql-tools/bin:/dsvm/tools/torch/bin
+
 # Install the custom vision module for labs 1 and 2
 pip install azure-cognitiveservices-vision-customvision
 
